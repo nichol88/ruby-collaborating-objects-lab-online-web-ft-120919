@@ -24,5 +24,6 @@ class Song
     s = Song.new(songname)
     binding.pry
     s.artist = artist
+    s
   end
 end
