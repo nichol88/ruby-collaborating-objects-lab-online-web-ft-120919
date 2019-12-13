@@ -27,7 +27,7 @@ class Artist
     a = @@all.select{ |artist|
         artist.name == name
       }
-    if a == !nil
+    if a
       a
     else
       Artist.new(name)
