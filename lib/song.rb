@@ -21,6 +21,7 @@ class Song
     songname = contents[1]
 
     s = Song.new(songname)
+    
     s.artist = artist
   end
 end
