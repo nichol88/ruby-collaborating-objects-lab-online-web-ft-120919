@@ -31,6 +31,7 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    Artist.find_by_name(name)
+    if Artist.find_by_name(name) == nil
+      Artist.new(name)
   end
 end
