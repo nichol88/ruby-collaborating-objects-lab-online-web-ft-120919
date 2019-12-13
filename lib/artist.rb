@@ -24,10 +24,6 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    puts "All artists: #{@@all}"
-    if @@all.empty?
-      Artist.new(name)
-    end
     i = 0
     while i < @@all.length
       if @@all[i].name == name
