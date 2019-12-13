@@ -28,6 +28,9 @@ class Artist
     if @@all.empty?
       Artist.new(name)
     end
+
+    @@all[0].name == name
+
   end
 
 end
