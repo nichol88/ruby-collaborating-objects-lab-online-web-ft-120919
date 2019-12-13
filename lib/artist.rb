@@ -31,8 +31,6 @@ class Artist
       puts "Current artist name: #{artist.name}"
       artist.name == name
     }
-    puts a
-    a ? a : nil
   end
 
   def self.find_or_create_by_name(name)
