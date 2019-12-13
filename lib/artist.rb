@@ -24,17 +24,10 @@ class Artist
   end
 
   def self.find_by_name(name)
-
+    a = @@all.select
   end
 
   def self.find_or_create_by_name(name)
-    a = @@all.select{ |artist|
-        artist.name == name
-      }
-    if a
-      a
-    else
-      Artist.new(name)
-    end
+
   end
 end
