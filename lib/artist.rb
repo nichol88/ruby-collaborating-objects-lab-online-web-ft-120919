@@ -28,6 +28,8 @@ class Artist
     a = @@all.collect{ |artist|
         artist.name == name
       }
+    if a == !nil
+      a
     else
       Artist.new(name)
     end
