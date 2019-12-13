@@ -24,14 +24,13 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    i = 0
-    while i < @@all.length
-      if @@all[i].name == name
-        return @@all[i]
-      else
-        return Artist.new(name)
-      end
+    if @@all.empty?
+      Artist.new(name)
     end
+    @@all.each_char { |artist|
+      return artist if artist.name == name
+    }
+    Artist.new(name)
   end
 
 end
