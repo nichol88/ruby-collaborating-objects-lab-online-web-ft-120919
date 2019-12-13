@@ -23,23 +23,8 @@ class Artist
     song.artist = self
   end
 
-  def self.find_by_name(name)
-    puts "finding by name: #{name}"
-
-    @@all.each{ |artist|
-      puts "Checking artist: #{artist}"
-      puts "Current artist name: #{artist.name}"
-      artist.name == name
-    }
-  end
-
   def self.find_or_create_by_name(name)
-    a = Artist.find_by_name(name)
-    #puts "result: #{a}"
-    if a == nil
-      Artist.new(name)
-    else
-      a
-    end
+    puts "All artists: #{@@al}"
   end
+
 end
