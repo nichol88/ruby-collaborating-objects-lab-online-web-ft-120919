@@ -27,6 +27,7 @@ class Artist
     puts "finding by name: #{name}"
     a = @@all.select{ |artist|
       puts "Checking artist: #{artist}"
+      puts "Current artist name: #{artist.name}"
       artist.name == name
     }
     puts a
