@@ -32,6 +32,7 @@ class Artist
 
   def self.find_or_create_by_name(name)
     a = Artist.find_by_name(name)
+    puts "result: #{a}"
     if a == nil
       Artist.new(name)
     else
