@@ -5,6 +5,8 @@ class MP3Importer
   end
 
   def files
-    Dir.each_child(@path)
+    Dir.entries(@path).select{ |f|
+      f.include?(".mp3")
+    }
   end
 end
