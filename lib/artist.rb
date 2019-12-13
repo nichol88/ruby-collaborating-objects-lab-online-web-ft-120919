@@ -35,6 +35,7 @@ class Artist
     if a == nil
       Artist.new(name)
     else
-
+      a
+    end
   end
 end
