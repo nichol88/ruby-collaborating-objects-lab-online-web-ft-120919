@@ -33,7 +33,8 @@ class Artist
       if @@all[0].name == name
         return @@all[0]
       else
-        Artist.new(name)
+        return Artist.new(name)
+      end
 
   end
 
