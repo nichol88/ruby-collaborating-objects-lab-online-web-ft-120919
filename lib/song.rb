@@ -19,9 +19,8 @@ class Song
     contents = filename.split(" - ")
     artist = contents [0]
     songname = contents[1]
-    #genre = contents[2].delete_suffix(".mp3")
+
     s = Song.new(songname)
     s.artist = artist
-    #s.genre = genre
   end
 end
