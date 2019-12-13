@@ -24,6 +24,7 @@ class Artist
   end
 
   def self.find_by_name(name)
+    puts "finding by name: #{name}"
     a = @@all.select{ |artist|
       artist.name == name
     }
