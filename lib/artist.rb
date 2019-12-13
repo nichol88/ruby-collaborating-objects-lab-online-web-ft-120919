@@ -30,8 +30,8 @@ class Artist
     end
     i = 0
     while i < @@all.length
-      if @@all[0].name == name
-        return @@all[0]
+      if @@all[i].name == name
+        return @@all[i]
       else
         return Artist.new(name)
       end
