@@ -20,10 +20,10 @@ class Song
     contents = filename.split(" - ")
     artist = contents [0]
     songname = contents[1]
-    
+
     s = Song.new(songname)
 
-    s.artist = artist
+    s.artist = Artist.find_or_create_by_name(artist)
     s
   end
 end
