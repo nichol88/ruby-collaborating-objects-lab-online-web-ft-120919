@@ -5,6 +5,7 @@ class MP3Importer
   end
 
   def files
-    @path.import("*.mp3")
+    basedir = @path
+    @files = ("*.mp3")
   end
 end
