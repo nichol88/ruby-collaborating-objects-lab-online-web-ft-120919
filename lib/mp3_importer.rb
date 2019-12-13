@@ -5,6 +5,6 @@ class MP3Importer
   end
 
   def files
-    @files = Dir.each_child(@path)
+    Dir.each_child(@path)
   end
 end
