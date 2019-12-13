@@ -27,7 +27,7 @@ class Artist
     if @@all.empty?
       Artist.new(name)
     end
-    @@all.each_char { |artist|
+    @@all.each { |artist|
       return artist if artist.name == name
     }
     Artist.new(name)
