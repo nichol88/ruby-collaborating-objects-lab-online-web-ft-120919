@@ -9,4 +9,8 @@ class MP3Importer
       f.include?(".mp3")
     }
   end
+
+  def import
+    
+  end
 end
