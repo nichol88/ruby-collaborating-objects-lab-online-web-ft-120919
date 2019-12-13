@@ -24,8 +24,7 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-
-    a = @@all.collect{ |artist|
+    a = @@all.select{ |artist|
         artist.name == name
       }
     if a == !nil
