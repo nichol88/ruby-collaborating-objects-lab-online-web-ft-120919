@@ -28,8 +28,12 @@ class Artist
     if @@all.empty?
       Artist.new(name)
     end
-
-    @@all[0].name == name
+    i = 0
+    while i < @@all.length
+      if @@all[0].name == name
+        return @@all[0]
+      else
+        Artist.new(name)
 
   end
 
