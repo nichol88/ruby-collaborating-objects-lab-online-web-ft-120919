@@ -20,6 +20,8 @@ class Song
     songname = contents[1]
     artist = contents [0]
     genre = contents[2]
-    Song.new(songname)
+    s = Song.new(songname)
+    s.artist = artist
+    s.genre = genre
   end
 end
