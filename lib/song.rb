@@ -22,6 +22,6 @@ class Song
     #genre = contents[2].delete_suffix(".mp3")
     s = Song.new(songname)
     s.artist = artist
-    s.genre = genre
+    #s.genre = genre
   end
 end
