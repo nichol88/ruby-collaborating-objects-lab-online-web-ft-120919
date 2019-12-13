@@ -25,7 +25,7 @@ class Artist
 
   def self.find_by_name(name)
     puts "finding by name: #{name}"
-    a = @@all.select{ |artist|
+    a = @@all.collect{ |artist|
       puts "Checking artist: #{artist}"
       puts "Current artist name: #{artist.name}"
       artist.name == name
