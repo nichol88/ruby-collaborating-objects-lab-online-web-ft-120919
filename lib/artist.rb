@@ -27,6 +27,7 @@ class Artist
     puts "All artists: #{@@all}"
     if @@all.empty?
       Artist.new(name)
+    end
   end
 
 end
