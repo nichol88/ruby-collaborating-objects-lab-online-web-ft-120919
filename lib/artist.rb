@@ -29,6 +29,7 @@ class Artist
       puts "Checking artist: #{artist}"
       artist.name == name
     }
+    puts a
     a ? a : nil
   end
 
