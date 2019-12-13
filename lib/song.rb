@@ -20,9 +20,9 @@ class Song
     contents = filename.split(" - ")
     artist = contents [0]
     songname = contents[1]
-    binding.pry
+    
     s = Song.new(songname)
-    binding.pry
+
     s.artist = artist
     s
   end
